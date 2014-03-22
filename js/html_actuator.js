@@ -159,13 +159,12 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "gabrielecirulli");
-  tweet.setAttribute("data-url", "http://git.io/2048");
-  tweet.setAttribute("data-counturl", "http://gabrielecirulli.github.io/2048/");
+  tweet.setAttribute("data-url", "http://huonw.github.io/2048-4D/");
+  tweet.setAttribute("data-counturl", "http://huonw.github.io/2048-4D/");
   tweet.textContent = "Tweet";
 
-  var text = "I scored " + this.score + " points at 2048, a game where you " +
-             "join numbers to score high! #2048game";
+  var text = "I scored " + this.score + " points at 2048-4D, a game where you " +
+             "join numbers to score high in 4D! #2048game #4d";
   tweet.setAttribute("data-text", text);
 
   return tweet;
