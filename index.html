@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2048 4D</title>
+  <title>2048 6D</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
@@ -14,15 +14,15 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 
-  <meta property="og:title" content="2048 4D game"/>
-  <meta property="og:site_name" content="2048 4D game"/>
-  <meta property="og:description" content="Join the numbers and get to the 2048 tile in 4-dimensions! Careful: this game is extremely addictive!"/>
-  <meta property="og:image" content="http://huonw.github.io/2048-4D/meta/og_image.png"/>
+  <meta property="og:title" content="2048 6D game"/>
+  <meta property="og:site_name" content="2048 6D game"/>
+  <meta property="og:description" content="Join the numbers and get to the 2048 tile in 6-dimensions! Careful: this game is extremely addictive!"/>
+  <meta property="og:image" content="http://huonw.github.io/2048-6D/meta/og_image.png"/>
 </head>
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">2048 4D</h1>
+      <h1 class="title">2048 6D</h1>
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
@@ -73,18 +73,18 @@
     </div>
 
     <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> and <strong>WASD</strong>, or <strong>swipe</strong> with one and two fingers, to move the tiles in the 4 dimensions. When two tiles with the same number touch, they <strong>merge into one!</strong>
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> and <strong>WASD</strong>, or <strong>swipe</strong> with one and two fingers, to move the tiles in the 3rd to 6th dimensions. When two tiles with the same number touch, they <strong>merge into one!</strong>
     </p>
     <hr>
     <p>
-    <strong class="important">Note:</strong> 2&times;2&times;2&times;2 4-dimensional version created by Huon Wilson.
+    <strong class="important">Note:</strong> 1&times;1&times;2&times;2&times;3&times;2 6-dimensional version created by <a href="https://github.com/t0mdab0mb">Haihao Liu</a>, strongly based on <a href="https://github.com/huonw">Huon Wilson's</a> 4-dimensional one. You can play this on your phone via <a href="http://git.io/2048">http://git.io/20486D.</a> Beware, the controls are intentionally very counterintuitive!
     </p>
     <hr>
     <p>
     <a href="http://gabrielecirulli.github.io/2048/">Original</a> created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
     </p>
     <div class="sharing">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out 2048-4D, a game where you join numbers to score high in 4D! #2048game #4d" data-url="http://huonw.github.io/2048-4D/" data-counturl="http://huonw.github.io/2048-4D/">Tweet</a>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out 2048-6D, a game where you join numbers to score high in 6D! #2048game #6d" data-url="http://bit.ly/2048-6D" data-counturl="http://t0mdab0mb.github.io/2048-6D/">Tweet</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </div>
   </div>
@@ -98,22 +98,15 @@
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
 
-<!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=9681186;
-var sc_invisible=1;
-var sc_security="9c00be85";
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49287432-1', 't0mdab0mb.github.io');
+  ga('send', 'pageview');
+
 </script>
-<noscript><div class="statcounter"><a title="web analytics"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="http://c.statcounter.com/9681186/0/9c00be85/0/"
-alt="web analytics"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
 </body>
 </html>
